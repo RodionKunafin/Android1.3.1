@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Android1.3.1</string>
+    <string name="heading">Комплексная система мониторинга здоровья.Author:Кунафин</string>
+    <string name="nameOfPatient">ФИО Пациента</string>
+    <string name="age">Возраст</string>
+    <string name="btnSaveOnMainActivity">Сохранить</string>
+    <string name="btnPressure">Перейти к записи давления</string>
+    <string name="btnVitalStatistics">Перейти к жизненным показателям(вес,шаги)</string>
+    <string name="pressureRecording">Запись давления</string>
+    <string name="topPressure">Верхнее давление</string>
+    <string name="lowerPressure">Нижнее давление</string>
+    <string name="pulse">Пульс</string>
+    <string name="tachycardia">Тахикардия</string>
+    <string name="date">Дата и время замера</string>
+    <string name="btnSaveOnSecondActivity">Сохранить</string>
+    <string name="btnToMainActivity">В начало</string>
+    <string name="btnToThirdActivity">Далее</string>
+    <string name="vitalStatistics">Запись жизненных показателей</string>
+    <string name="weight">Вес(кг.гг)</string>
+    <string name="steps">Количество шагов</string>
+    <string name="btnSaveOnTrirdActivity">Сохранить</string>
+</resources>
