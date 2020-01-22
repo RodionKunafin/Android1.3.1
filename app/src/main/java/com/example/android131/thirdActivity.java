@@ -22,8 +22,8 @@ public class thirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-        Button btnSaveOnThirdActivity = findViewById(R.id.btnSaveOnThirdActivity);
-        btnSaveOnThirdActivity.setOnClickListener(new View.OnClickListener() {
+        Button btnSave = findViewById(R.id.btnSave);
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditText weight = findViewById(R.id.weight);

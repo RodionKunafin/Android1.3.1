@@ -8,36 +8,34 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MyApp";
 
-    List<StartScreen> list = new ArrayList<>();
+    List<PatienInfo> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //TextView nameOfPatient = findViewById(R.id.nameOfPatient);
-        Button btnSaveOnMainActivity = findViewById(R.id.btnSaveOnMainActivity);
-        btnSaveOnMainActivity.setOnClickListener(new View.OnClickListener() {
+
+        Button btnSave = findViewById(R.id.btnSave);
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditText nameOfPatient = findViewById(R.id.nameOfPatient);
                 EditText age = findViewById(R.id.age);
-                String nameOfPatientValue = nameOfPatient.getText().toString();
+                String nameOfPatientValue = age.getText().toString();
                 String ageValue = age.getText().toString();
 
                 Log.i(TAG, "Пользователь нажал кнопку сохранить");
                 try {
-                    StartScreen value = new StartScreen((ageValue), Integer.parseInt(nameOfPatientValue));
+                    PatienInfo value = new PatienInfo((ageValue), Integer.parseInt(nameOfPatientValue));
                     list.add(value);
                 }
                 catch (Exception ex){

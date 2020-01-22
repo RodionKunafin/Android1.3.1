@@ -24,19 +24,20 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        Button btnSaveOnSecondActivity = findViewById(R.id.btnSaveOnSecondActivity);
-        btnSaveOnSecondActivity.setOnClickListener(new View.OnClickListener() {
+        Button btnSave = findViewById(R.id.btnSave);
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditText topPressure = findViewById(R.id.topPressure);
                 EditText lowerPressure = findViewById(R.id.lowerPressure);
                 EditText pulse = findViewById(R.id.pulse);
-                final Button tachycardia = findViewById(R.id.tachycardia);
+                final CheckBox tachycardia = findViewById(R.id.tachycardia);
                 EditText date = findViewById(R.id.date);
                 String topPressureValue = topPressure.getText().toString();
                 String lowerPressureValue = lowerPressure.getText().toString();
                 String pulseValue = pulse.getText().toString();
                 String dateValue = date.getText().toString();
+                boolean isTachycardia = tachycardia.isChecked();
 
                 Log.i(TAG, "Пользователь нажал кнопку сохранить");
 
@@ -50,14 +51,14 @@ public class SecondActivity extends AppCompatActivity {
 
 
                 }
-                tachycardia.setOnClickListener(new View.OnClickListener() {
+                /*tachycardia.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         CheckBox language =(CheckBox) view;
                         boolean checked = language.isChecked();
 
                     }
-                });
+                });*/
 
 
             }
@@ -82,6 +83,7 @@ public class SecondActivity extends AppCompatActivity {
                 Log.i(TAG, "Пользователь нажал кнопку Далее");
             }
         });
+
 
 
     }
