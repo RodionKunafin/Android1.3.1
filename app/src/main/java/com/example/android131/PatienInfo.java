@@ -5,13 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 
     public class PatienInfo {
-        String nameOfPatient;
         int age;
+        String nameOfPatient;
 
 
-        public PatienInfo(String nameOfPatient, int age) {
-            this.nameOfPatient = nameOfPatient;
+
+        public PatienInfo(int age,String nameOfPatient) {
             this.age = age;
+            this.nameOfPatient = nameOfPatient;
         }
     }
 

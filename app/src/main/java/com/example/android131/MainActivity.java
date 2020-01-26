@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.i(TAG, "Пользователь нажал кнопку сохранить");
                 try {
-                    PatienInfo value = new PatienInfo((ageValue), Integer.parseInt(nameOfPatientValue));
+                    PatienInfo value = new PatienInfo(Integer.parseInt(ageValue),nameOfPatientValue);
                     list.add(value);
                 }
                 catch (Exception ex){

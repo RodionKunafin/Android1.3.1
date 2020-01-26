@@ -42,7 +42,7 @@ public class SecondActivity extends AppCompatActivity {
                 Log.i(TAG, "Пользователь нажал кнопку сохранить");
 
                 try {
-                    Pressure value = new Pressure(Integer.parseInt(topPressureValue),(lowerPressure),(pulse), dateValue,tachycardia);
+                    Pressure value = new Pressure(Integer.parseInt(topPressureValue),lowerPressure,pulse, dateValue,isTachycardia);
                     list1.add(value);
 
                 }

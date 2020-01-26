@@ -9,9 +9,9 @@ public class Pressure {
     EditText lowerPressure;
     EditText pulse;
     String date;
-    CheckBox tachycardia;
+    boolean tachycardia;
 
-    public Pressure(int topPressure, EditText lowerPressure, EditText pulse, String date, CheckBox tachycardia) {
+    public Pressure(int topPressure, EditText lowerPressure, EditText pulse, String date, boolean tachycardia) {
         this.topPressure = topPressure;
         this.lowerPressure = lowerPressure;
         this.pulse = pulse;
